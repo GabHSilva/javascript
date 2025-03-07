@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ex06 DOM</title>
+    <style>
+        div#area {
+            background: rgb(93, 143, 93);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+   <div id="area">
+        interaja...
+   </div>
+   
+   <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicou)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', saiu)
+
+        
+        function clicou(){
+            a.style.background = 'red'
+            a.style.color = 'black'
+        }
+
+        function entrou() {
+            a.innerText = 'Entrou'
+        }
+
+        function saiu() {
+            a.innerText = 'Saiu'
+            a.style.background = 'rgb(93, 143, 93)'
+            a.style.color = 'white'
+        }
+   </script>
 </body>
 </html>
