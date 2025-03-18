@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex11</title>
+</head>
+<body>
+    <h1>TRIVAGO</h1>
+    <h2>Viagem para o <strong>BRASIL</strong></h2>
+    <p>De onde voce é?</p>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Enviar" onclick="origem()">
+    <div id="texto"></div>
+
+    <script>
+        function origem() {
+            var p = document.getElementById('pais')
+            var txt = document.getElementById ('texto')
+
+            if (p != 'Brasil') {
+                txt.innerText = `Você é um <strong>ESTRANGEIRO</strong>`
+            } else {
+                txt.innerText = `Você é <strong>BRASILEIRO</strong>`
+                
+            }
+        }
+    </script>
+</body>
+</html>

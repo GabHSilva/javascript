@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex10</title>
+</head>
+<body>
+    <h1>Detran</h1>
+    <h2>Qual sua velocidade?</h2>
+    <input type="number" name="vel" id="vel" placeholder="Km/h">
+    <input type="button" value="Enviar" onclick="velocidade()">
+    <div id="texto"></div>
+
+    <script>
+        function velocidade() {
+            var v1 = document.getElementById('vel')
+            var v2 = Number(v1.value)
+
+            var txt = document.getElementById('texto')
+
+            txt.innerText = `Sua velocidade é de ${v2}Km/h`
+
+            if(v2 > 60) {
+                txt.innerHTML += `<p>Sua velocidade esta acima da permitida, voce sera <strong>MULTADO</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
