@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+body {
+    width: 98vw;
+    height: 95.1vh;
+    background-color: burlywood;
+}
+
+header h1 {
+    text-align: center;
+    text-shadow: 4px 3px 3px rgba(0, 0, 0, 0.144);
+    color: white;
+}
+
+
+section {
+    width: 80vw;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+}
