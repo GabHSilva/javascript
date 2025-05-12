@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Medidor de Idade</title>
+</head>
+<body>
+    <h1>Medidor de Idade</h1>
+    <form action="form.php" method="get">
+        <p>
+            <label for="idade">Qual ano você nasceu?</label>
+            <input type="number" name="idade" id="idade" placeholder="xxxx">
+        </p>
+        <p>
+            <input type="radio" name="sex" id="mas">
+            <label for="mas">Masculino</label>
+            <input type="radio" name="sex" id="fe">
+            <label for="fe">Feminino</label>
+        </p>
+        <input type="button" value="Enviar" onclick="resultado()">
+    </form>
+    <div id="resul"></div>
+    <script src="script.js"></script>
+</body>
+</html>
