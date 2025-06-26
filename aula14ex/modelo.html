@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que horas são?</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            text-align: center;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vamos Começar</h1>
+    </header>
+    <main>
+        <section>
+            <div>
+                <form action="form.php" method="get">
+                    <p>
+                        <label for="inicio">Inicio</label>
+                        <input type="number" name="" id="inicio">
+                    </p>
+                    <p>
+                        <label for="condicao">Fim</label>
+                        <input type="number" name="" id="condicao">
+                    </p>
+                    <p>
+                        <label for="incr">Passo</label>
+                        <input type="number" name="" id="incr">
+                    </p>
+                    <input type="button" value="Resultado" onclick="walk()">
+                </form>
+            </div>
+            <div id="passos"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Feito por <a href="https://github.com/GabHSilva">Gabriel Silva</a> para <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo">Curso em Video</a></p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
