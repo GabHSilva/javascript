@@ -4,8 +4,8 @@ function walk() {
     var walking = document.getElementById('incr')
     var print = document.getElementById('passos')
 
-
+    print.innerHTML = `Contando: `
     for (var con = Number(start.value); con <= Number(finish.value); con = con + Number(walking.value) ) {
-        print.innerHTML = con
+        print.innerHTML += `${con} &#x1F449 `
     }
 }
