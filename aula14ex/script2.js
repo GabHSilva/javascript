@@ -3,9 +3,11 @@ function tabuada() {
     var text = document.getElementById('nt')
 
     for (var ni = 1; ni <= 10; ni++) {
+        item.innerHTML = ''
         var mult = Number(number.value) * ni
-
-        text.innerHTML += `${Number(number.value)} x ${ni} = ${mult} `
+        var item = document.createElement('option')
+        item.text = `${Number(number.value)} x ${ni} = ${mult} `
+        text.appendChild(item)
     }
 }
 

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+html, body {
+    margin: 0px;
+    background-color: rgb(102, 204, 170);
+    text-align: center;
+    width: 97vw;
+    height: 96vh;
+}
+
+h1 {
+    color: rgb(238, 238, 238);
+    text-shadow: 5px 6px 6px rgba(0, 0, 0, 0.192);
+}
+
+section {
+    width: 60vw;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 5px 6px 6px rgba(0, 0, 0, 0.192);
+
+
+}
